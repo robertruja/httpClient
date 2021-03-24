@@ -6,18 +6,14 @@ import com.gigi.httpclient.api.Request;
 import com.gigi.httpclient.api.Response;
 import com.gigi.httpclient.model.Session;
 import com.gigi.httpclient.processor.ResponseProcessor;
-import org.apache.log4j.Logger;
+import org.crumbs.core.logging.Logger;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.net.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by coco on 13-Jan-18.
- */
+
 public class ClientImpl implements Client {
 
     private Map<String, Session> openSessions = new HashMap<>();
